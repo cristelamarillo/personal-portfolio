@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="personal portfolio.css">
+    <script src="https://kit.fontawesome.com/f11b6f9656.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>   
+        <div class="header-text">
+            <p>1G-FSM</p>
+            <h1>Hi, I'm <span>Cristel Amarillo</span><br>From Philippines</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a punctual and motivated individual who is able to work in a busy environment and produce high standards of work. I am an excellent team worker and am able to take instructions from all levels and build up good working relationships with all colleagues. I am flexible, reliable and possess excellent time keeping skills.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab"  id="skills">
+                    <ul>
+                        <li><span>Communication</span><br>Filipino/English</li>
+                        <li><span>Knowledge</span><br>Basic Design</li>
+                        <li><span>Talent</span><br>Dancing, Singing, Designing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Training</span><br>Generika Retail Operations Trainings</li>
+                        <li><span>Course</span><br>Standard First Aid and Basic Life Support-Cardiopulmonary</span><br>Resuscitation/Automated External Defibrilator Training Course</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>TERTIARY</span><br>Pambayang Kolehiyo ng Mauban
+                        </span><br>Bachelor of Secondary Education
+                        </span><br>Major in Food and Service Management
+                        </span><br>Brgy. Polo Mauban, Quezon
+                        </span><br>2022-2023
+                            </li>
+                        <li><span>SECONDARY</span><br>Manuel S. Enverga Memorial College of Arts and Trade
+                        </span><br>Brgy. Soleda Mauban, Quezon
+                        </span><br>2003-2007
+                            </li>
+                        <li><span>ELEMENTARY</span><br>Mauban South Central Elementary School
+                        </span><br>Brgy. Rizaliana Mauban, Quezon
+                        </span><br>1997-2003
+                            </li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">  
+                <div class="layer">
+                    <h3>Pharmacy Assistant</span><br>Generika Drugstore</h3>
+                    <p>San Buenaventura St.</span><br>Brgy. Rizaliana Mauban, Quezon
+                    </span><br>January 25, 2016-August 15, 2016
+                        </p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>  
+             </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>First Aider</span><br>FSPHIL CORP.</h3>
+                    <p>Brgy. Cagsiay II Mauban, Quezon
+                    </span><br>January 16-April 2, 2017
+                        </p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>First Aider</span><br>DHPHIL CORP.</h3>
+                    <p>Brgy. Cagsiay II Mauban, Quezon
+                    </span><br>April 27 -  December 2017
+                        </p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------------------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> zirclet@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i> +639084890618</p>
+                <p><i class="fa-brands fa-square-facebook"></i>https://www.facebook.com/cristelamarillo</p>
+                
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Cristel. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0px";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
